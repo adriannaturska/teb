@@ -1,0 +1,16 @@
+* {background-color: white}
+table, tr, th, td {
+  border: solid 1px black;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+}
+th {background-color: grey;
+color: white;}
+
+
+.three {background-color: red;}
+.one {background-color: lightblue;}
+.two {background-color: lightgreen;}
+
+.table {align-items: center;}
