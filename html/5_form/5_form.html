@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formularze</title>
+  </head>
+  <body>
+    <form class="" action="5.html" method="get" novalidate> <!--novalidate, żeby za każdym razem nie trzeba było wysyłać poprawnych informacji (w ramach testowania strony, później warto usunąć)-->
+      <input type="text" name="surname" value="" placeholder="login" autocomplete="off" maxlength="5" required>
+        <br><br>
+      <input type="password" name="pass" placeholder="pass" value="">
+        <br>
+        <br>
+      <textarea name="name" rows="8" cols="80" placeholder="komentarz..."></textarea>
+        <br><br>
+      <input type="range" name="" value="">
+        <br><br>
+      <input type="number" name="" value="" min="0" max="10" step="0.1">
+        <br><br>
+      <input type="color" name="" value="">
+        <br>
+        <br>
+      <input type="date" name="" value="">
+        <br><br>
+      <input type="datetime-local" name="" value=""> <!--'datetime'nie działa-->
+        <br><br>
+      <input type="email" name="" value="">
+        <br>
+        <br>
+      <input type="file" name="" value="">
+        <br>
+        <br>
+      <input type="hidden" name="" value="">
+      <input type="image" name="" value=""> <!--nie działa, zamiast tego 'file'--->
+        <br>
+        <br>
+      <input type="month" name="" value="">
+        <br>
+        <br>
+      <input type="checkbox" name="" value=""> Akceptuję regulamin <br><br>
+      <input type="radio" name="color" value="red" checked> Czerwony <input type="radio" name="color" value="blue"> Niebieski<br><br> <!--przy różnych name można zaznaczać oba buttony, gdy mają one tę samą nazwę to można tylko jeden-->
+      <input type="search" name="" value=""> wyszukaj
+      <br><br>
+      <select class="" name="country">
+        <option value="pl">Polska</option>
+        <option value="de">Niemcy</option>
+        <option value="usa">USA</option>
+      </select>
+        <br><br>
+        <select class="" name="country" multiple size="5">
+          <optgroup label="Europa">
+            <option value="pl">Polska</option>
+            <option value="de">Niemcy</option>
+          </optgroup>
+          <optgroup label="Ameryka Północna">
+            <option value="usa">USA</option>
+          </optgroup>
+
+        </select>
+      <input type="reset" name="" value="reset"> <!--usuwa wszystkie wartości w formularzu-->
+      <input type="submit" name="button" value="zatwierdź">
+    </form>
+  </body>
+</html>
